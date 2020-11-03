@@ -7,9 +7,48 @@
         mc:Ignorable="d"
         Title="Equipos NBA" Height="450" Width="800"
         Icon="ball.ico">
-    <StackPanel Orientation="Vertical">
-        <Border BorderBrush="Black" BorderThickness="3" Margin="5" CornerRadius="3">
-            <StackPanel Orientation="Vertical">
+    <Window.Resources>
+        <Style TargetType="Border">
+            <Setter Property="BorderBrush"
+                    Value="Black" />
+            <Setter Property="BorderThickness"
+                    Value="3" />
+            <Setter Property="Margin"
+                    Value="5" />
+            <Setter Property="CornerRadius"
+                    Value="3" />
+        </Style>
+        
+        <Style TargetType="Image">
+            <Setter Property="Width"
+                    Value="150" />
+        </Style>
+        
+        <Style TargetType="StackPanel">
+            <Setter Property="Orientation"
+                    Value="Vertical" />
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize"
+                    Value="30" />
+            <Setter Property="FontWeight"
+                    Value="Bold" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Center" />
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+        </Style>
+
+        <Style TargetType="WrapPanel">
+            <Setter Property="HorizontalAlignment"
+                    Value="Center" />
+        </Style>
+        
+    </Window.Resources>
+    <StackPanel>
+        <Border>
+            <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
                                          StartPoint="0.5,0">
@@ -19,31 +58,19 @@
                                       Offset="1" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock Text="Los Ángeles Lakers" 
-                           HorizontalAlignment="Center" 
-                           FontSize="30" 
-                           FontWeight="Bold"
-                           TextWrapping="Wrap"/>
-                <WrapPanel HorizontalAlignment="Center">
-                    <Image Source="9_lakers.png" 
-                           Width="150"/>
-                    <Image Source="14_lakers.png"
-                           Width="150" />
-                    <Image Source="23_lakers.png"
-                           Width="150" />
-                    <Image Source="3_lakers.png"
-                           Width="150" />
-                    <Image Source="39_lakers.png"
-                           Width="150" />
+                <TextBlock Text="Los Ángeles Lakers" />
+                <WrapPanel>
+                    <Image Source="9_lakers.png" />
+                    <Image Source="14_lakers.png"/>
+                    <Image Source="23_lakers.png"/>
+                    <Image Source="3_lakers.png"/>
+                    <Image Source="39_lakers.png"/>
                 </WrapPanel>
             </StackPanel>
         </Border>
 
-        <Border BorderBrush="Black"
-                BorderThickness="3"
-                Margin="5"
-                CornerRadius="3">
-            <StackPanel Orientation="Vertical">
+        <Border>
+            <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
                                          StartPoint="0.5,0">
@@ -54,12 +81,8 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
                 <TextBlock Text="Miami Heat"
-                           HorizontalAlignment="Center"
-                           FontSize="30"
-                           FontWeight="Bold"
-                           Foreground="White" 
-                           TextWrapping="Wrap"/>
-                <WrapPanel HorizontalAlignment="Center">
+                           Foreground="White" />
+                <WrapPanel>
                     <Image Source="7_heat.png"
                            Width="150" />
                     <Image Source="14_heat.png"
