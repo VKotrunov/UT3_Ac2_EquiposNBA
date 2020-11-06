@@ -8,7 +8,7 @@
         Title="Equipos NBA" Height="450" Width="800"
         Icon="ball.ico">
     <Window.Resources>
-        <Style TargetType="Border">
+        <Style TargetType="Border" x:Key="Marco">
             <Setter Property="BorderBrush"
                     Value="Black" />
             <Setter Property="BorderThickness"
@@ -47,7 +47,7 @@
         
     </Window.Resources>
     <StackPanel>
-        <Border>
+        <Border Style="{StaticResource Marco}">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
@@ -69,7 +69,7 @@
             </StackPanel>
         </Border>
 
-        <Border>
+        <Border Style="{StaticResource Marco}">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
